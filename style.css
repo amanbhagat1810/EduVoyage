@@ -1,24 +1,94 @@
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
-  background: #f4f4f4;
+  background: #f7f7f7;
 }
+
 header {
   background: #333;
-  color: #fff;
-  padding: 10px 0;
+  color: white;
   text-align: center;
+  padding: 20px;
 }
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 main {
   padding: 20px;
 }
-a {
-  color: #0066cc;
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #333;
+}
+
+/* About Section Styles */
+#about {
+  background: #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#about .cta-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#about .cta-btn:hover {
+  background: #0056b3;
+}
+
+/* Project Section Styles */
+#projects .project-card {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#projects .project-card h3 {
+  color: #333;
+}
+
+#projects .project-card a {
+  color: #007bff;
   text-decoration: none;
 }
-a:hover {
+
+#projects .project-card a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    text-align: center;
+  }
+
+  #projects .project-card {
+    margin: 10px 0;
+  }
 }
